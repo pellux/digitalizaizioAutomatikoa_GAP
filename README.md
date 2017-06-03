@@ -1,0 +1,1 @@
+# digitalizaizioAutomatikoa_GAP
