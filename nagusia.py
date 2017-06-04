@@ -471,7 +471,7 @@ def zuzenketaAutomatikoa(textua, hizkuntza):
 
 	#eus
 	if hizkuntza=="eus":
-		spellchecker = hunspell.HunSpell('MySpell-3.0/eu_ES.dic','MySpell-3.0/eu_ES.aff')
+		spellchecker = hunspell.HunSpell('eu_ES.dic','eu_ES.aff')
 	#esp
 	if hizkuntza=="spa":
 		spellchecker = hunspell.HunSpell('/usr/share/hunspell/es_ES.dic','/usr/share/hunspell/es_ES.aff')
