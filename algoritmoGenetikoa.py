@@ -125,7 +125,7 @@ def irudiakEraldatu(indibiduoak):
 
 		#eraldaketarik ez badu
 		if 0 == len(eralNullKendu):
-			#komandoa = "kopiatu.sh "+argazkia+" "+str(i)
+
 			komandoa = "cp "+argazkia+" temp/indibi"+str(i)
 			args = shlex.split(komandoa)
 			subprocess.call(args)
@@ -347,7 +347,7 @@ def gurutzaketak(gurasoak):
 
 	berriak = []
 	for i in range(int(len(gurasoak)/2)):
-		#print("indizea "+str(i)+" => "+str(indizeak[i]))
+
 		gur1 = gurasoak[i]
 		gur2 = gurasoak[i+1]
 		#gurutzatu egingo ditugu(one point crossover)

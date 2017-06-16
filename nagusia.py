@@ -24,9 +24,6 @@ def irudiaEraldatu(eraldaketak, argazkia, izena):
 		if eral != "null":
 			eralNullKendu.append(eral)
 
-	#print(ind)
-	print(eralNullKendu)
-
 	#eraldaketarik ez badu
 	if 0 == len(eralNullKendu):
 		#komandoa = "kopiatu.sh "+argazkia+" "+str(i)
@@ -165,7 +162,6 @@ def irudiaEraldatu(eraldaketak, argazkia, izena):
 				komandoa = "convert -gaussian-blur 3x3 temp/ir"+str(j-1)+" temp/ir"+str(j)
 		
 		#komandoa exekutatu
-		print("*** "+str(komandoa))
 		args = shlex.split(komandoa)
 		subprocess.call(args)
 		#yosuren indizea bada
@@ -383,7 +379,7 @@ def zuzenketaSemiAutomatikoa(textua, box, image, hizkuntza):
 		hitzak = line.split(" ")
 		#hitz bakoitza zuzendu
 		for hitz in hitzak:
-			#print(" mmmmmmmmmmmmmmmmmmmmmmmmmmmmm ==> "+str(boxInd))
+
 			hitz = hitz.replace("\n","")
 			hitzCod = hitz.replace(".","")
 			hitzCod = hitzCod.replace(",","")
@@ -565,7 +561,6 @@ def zuzenketaManuala(mySemaitza, textua, lista, box, image):
 			if boxInd != -1:
 
 				#irudia ebaki
-				#print("::::::::"+str(boxHitzak[boxInd].hitz))
 				komandoa = "convert -crop "+str(boxHitzak[boxInd].xDim)+"x"+str(boxHitzak[boxInd].yDim)+"+"+str(boxHitzak[boxInd].xPos)+"+"+str(boxHitzak[boxInd].yPos)+" "+str(textu_osoa)+" abe.tiff"
 				args = shlex.split(komandoa)
 				subprocess.call(args)
