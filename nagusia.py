@@ -683,9 +683,9 @@ if textu_zatia != "" and textu_zatia_txt != "":
 
 else:#defektuzko aurreprozesaketa
 	eraldaketak = []
-	eraldaketak.append("null")#hau aldatu daiteke
-	eraldaketak.append("null")
-	eraldaketak.append("null")
+	eraldaketak.append("normalize")
+	eraldaketak.append("gaussian-blur")
+	eraldaketak.append("contrast")
 	eraldaketak.append("null")
 	eraldaketak.append("null")
 	eraldaketak.append("null")
